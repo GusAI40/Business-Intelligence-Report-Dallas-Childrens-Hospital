@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Intelligence Report</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="dark-mode-toggle" id="darkModeToggle"><i class="fas fa-moon"></i></button>
+
+  <header class="header">
+    <div class="header-content">
+      <h1><i class="fas fa-chart-line"></i> Business Intelligence Report</h1>
+      <p>Children's Hospital Dallas: Shaping the Future of Pediatric Healthcare</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="section">
+      <h2><i class="fas fa-file-alt"></i> Executive Summary</h2>
+      <p>This comprehensive business intelligence report provides a strategic overview of Children's Hospital Dallas, highlighting key challenges, opportunities, and future projections. Our analysis reveals a dynamic landscape that demands innovative approaches to pediatric healthcare delivery, financial management, and operational excellence.</p>
+    </section>
+
+    <section class="section">
+      <h2><i class="fas fa-chart-area"></i> Market Overview</h2>
+      <div class="chart-container">
+        <canvas id="marketOverviewChart"></canvas>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2><i class="fas fa-tachometer-alt"></i> Key Performance Indicators</h2>
+      <div class="challenge-grid">
+        <div class="challenge-card">
+          <i class="fas fa-users"></i>
+          <h3>Patient Volume</h3>
+          <div class="key-stat">1.49M</div>
+          <p>Annual patient visits across all services</p>
+        </div>
+        <div class="challenge-card">
+          <i class="fas fa-dollar-sign"></i>
+          <h3>Operating Revenue</h3>
+          <div class="key-stat">$1.8B</div>
+          <p>Fiscal Year 2022</p>
+        </div>
+        <div class="challenge-card">
+          <i class="fas fa-chart-pie"></i>
+          <h3>Market Share</h3>
+          <div class="key-stat">38%</div>
+          <p>Of pediatric care in North Texas</p>
+        </div>
+        <div class="challenge-card">
+          <i class="fas fa-smile"></i>
+          <h3>Patient Satisfaction</h3>
+          <div class="key-stat">92%</div>
+          <p>Overall patient satisfaction score</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2><i class="fas fa-chess"></i> Strategic Challenges and Opportunities</h2>
+      <div class="challenge-grid">
+        <div class="challenge-card">
+          <i class="fas fa-building"></i>
+          <h3>Capacity Expansion</h3>
+          <p>$5 billion investment in new campus to address growing demand and infrastructure limitations.</p>
+        </div>
+        <div class="challenge-card">
+          <i class="fas fa-balance-scale"></i>
+          <h3>Financial Sustainability</h3>
+          <p>Balancing major capital investments with operational costs and revenue optimization.</p>
+        </div>
+        <div class="challenge-card">
+          <i class="fas fa-user-md"></i>
+          <h3>Workforce Development</h3>
+          <p>Attracting and retaining top talent in a competitive healthcare market.</p>
+        </div>
+        <div class="challenge-card">
+          <i class="fas fa-microchip"></i>
+          <h3>Technological Innovation</h3>
+          <p>Implementing cutting-edge medical technologies and digital health solutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2><i class="fas fa-chart-bar"></i> Financial Projections</h2>
+      <div class="chart-container">
+        <canvas id="financialProjectionsChart"></canvas>
+      </div>
+    </section>
+
+    <section class="recommendations">
+      <h2><i class="fas fa-lightbulb"></i> Strategic Recommendations</h2>
+      <ul>
+        <li><i class="fas fa-rocket"></i> Accelerate the new campus development to meet projected demand growth</li>
+        <li><i class="fas fa-coins"></i> Implement a robust financial strategy to ensure long-term sustainability</li>
+        <li><i class="fas fa-graduation-cap"></i> Develop partnerships with educational institutions to secure a skilled workforce pipeline</li>
+        <li><i class="fas fa-laptop-medical"></i> Invest in telemedicine and AI-driven diagnostics to enhance care delivery and operational efficiency</li>
+        <li><i class="fas fa-hands-helping"></i> Expand community outreach programs to strengthen market position and brand loyalty</li>
+      </ul>
+    </section>
+
+    <section class="detailed-report">
+      <h2><i class="fas fa-file-alt"></i> Detailed Report</h2>
+      <ul>
+        <li>
+          <i class="fas fa-hospital"></i>
+          <strong>Facility Expansion</strong>
+          In-depth analysis of the $5 billion campus development project, including timeline, capacity increase, and expected impact on patient care.
+        </li>
+        <li>
+          <i class="fas fa-chart-line"></i>
+          <strong>Market Analysis</strong>
+          Comprehensive review of the pediatric healthcare market in North Texas, including competitor analysis and growth projections.
+        </li>
+        <li>
+          <i class="fas fa-money-bill-wave"></i>
+          <strong>Financial Performance</strong>
+          Detailed breakdown of revenue streams, cost structures, and financial ratios, with benchmarking against industry standards.
+        </li>
+        <li>
+          <i class="fas fa-user-md"></i>
+          <strong>Workforce Strategy</strong>
+          Assessment of current staffing levels, skill gaps, and proposed strategies for recruitment, retention, and professional development.
+        </li>
+        <li>
+          <i class="fas fa-stethoscope"></i>
+          <strong>Clinical Excellence</strong>
+          Evaluation of key clinical outcomes, quality metrics, and proposed initiatives to enhance patient care and safety.
+        </li>
+        <li>
+          <i class="fas fa-robot"></i>
+          <strong>Technology Roadmap</strong>
+          Overview of planned technological investments, including AI/ML applications, telemedicine platforms, and data analytics capabilities.
+        </li>
+        <li>
+          <i class="fas fa-handshake"></i>
+          <strong>Strategic Partnerships</strong>
+          Analysis of current and potential partnerships with research institutions, technology companies, and community organizations.
+        </li>
+        <li>
+          <i class="fas fa-globe"></i>
+          <strong>Community Impact</strong>
+          Detailed report on outreach programs, health education initiatives, and the hospital's role in improving community health outcomes.
+        </li>
+      </ul>
+    </section>
+
+    <section class="conclusion">
+      <h2><i class="fas fa-flag-checkered"></i> Conclusion</h2>
+      <p>Children's Hospital Dallas stands at a pivotal juncture in its history, poised for significant growth and transformation. The planned $5 billion campus expansion represents a bold step towards meeting the increasing demand for pediatric healthcare in North Texas. However, this ambitious project also brings challenges in terms of financial management, workforce development, and technological integration.</p>
+      <p>By focusing on strategic priorities such as operational efficiency, talent acquisition and retention, and innovative care delivery models, the hospital can capitalize on its strong market position and continue to provide exceptional care to the children of Dallas and beyond. The coming years will be crucial in shaping the future of pediatric healthcare in the region, and Children's Hospital Dallas is well-positioned to lead this transformation.</p>
+      <p>As we move forward, it will be essential to maintain a balance between growth and sustainability, ensuring that the hospital's expansion aligns with its core mission of providing compassionate, high-quality care to every child who needs it. With careful planning, strategic investments, and a continued commitment to excellence, Children's Hospital Dallas is set to reinforce its status as a leader in pediatric healthcare, both regionally and nationally.</p>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <p>Design by 🐐GOAT-UIX🌟</p>
+    <p>Powered by Open AI</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
